@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 
-from page import check_for_error_script  # Đảm bảo bạn đã import module này
+from Ultils.page import check_for_error_script  # Đảm bảo bạn đã import module này
 
 class Report(unittest.TestCase):
     def setUp(self):

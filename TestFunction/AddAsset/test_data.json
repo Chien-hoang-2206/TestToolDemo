@@ -1,0 +1,59 @@
+{
+  "1": {
+    "name": "test  name",
+    "code": "test code",
+    "TypeId": 6,
+    "GroupId": 2,
+    "Category": 2,
+    "StatusQuality": 2,
+  
+    "StatusBuy": 2,
+    "UnitId": 2,
+    "Quantity": 2000,
+    "PurchasePrice": 12000000,
+    "VendorId": 2,
+    "DateBuy": 2,
+    "UserId": 2,
+    
+    "ManufacturerCode": "#2123213",
+    "Serial": "123ffw",
+    "ManufactureYear": 2203,
+    "Country": "Mỹ",
+    "GuaranteeTime": 22,
+    "ConditionApplyGuarantee": "listening on ws://127.0.0.1:61216/devtools/browser/c25abe61-4328-4d7f-bb60-b6bd5aa0abaf ",
+  
+    "DepreciationDate": 2,
+    "OriginalPrice": 12000000,
+    "DepreciatedValue": 12000000,
+    "DepreciatedMonth": 12
+  },
+  "2":
+  {
+    "name": "test  name2",
+    "code": "test code2",
+    "TypeId": 7,
+    "GroupId": 4,
+    "Category": 2,
+    "StatusQuality": 2,
+  
+    "StatusBuy": 2,
+    "UnitId": 2,
+    "Quantity": 20300,
+    "PurchasePrice": 12000000,
+    "VendorId": 2,
+    "DateBuy": 2,
+    "UserId": 2,
+    
+    "ManufacturerCode": "#2123ss213",
+    "Serial": "123ffw",
+    "ManufactureYear": 2203,
+    "Country": "Mỹ",
+    "GuaranteeTime": 22,
+    "ConditionApplyGuarantee": "sssss on ws://127.0.0.1:61216/devtools/browser/c25abe61-4328-4d7f-bb60-b6bd5aa0abaf ",
+  
+    "DepreciationDate": 2,
+    "OriginalPrice": 12000000,
+    "DepreciatedValue": 12000000,
+    "DepreciatedMonth": 12
+  }
+}

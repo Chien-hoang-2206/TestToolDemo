@@ -1,9 +1,9 @@
 import webbrowser
 import os
-from login import LoginTest
-from assetList import AssetList
-from assetCreate import AssetCreate
-from ReportTestCase import Report
+from TestFunction.Login.login import LoginTest
+from TestFunction.AssetList.assetList import AssetList
+from TestFunction.AddAsset.assetCreate import AssetCreate
+from Template.ReportTestCase import Report
 from unittest import TestLoader, TestSuite
 from HtmlTestRunner import HTMLTestRunner
 
@@ -28,7 +28,7 @@ if __name__ == '__main__':
     AssetList = TestLoader().loadTestsFromTestCase(AssetList)
     AssetCreate = TestLoader().loadTestsFromTestCase(AssetCreate)
 
-    suite = TestSuite([LoginTest,AssetCreate])
+    suite = TestSuite([AssetCreate])
 
     runner = HTMLTestRunner(output=report_directory)
 

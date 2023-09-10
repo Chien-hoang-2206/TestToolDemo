@@ -8,19 +8,18 @@ import HtmlTestRunner
 # Thêm đối tượng CustomTestResult để truyền tham chiếu
 class LoginTest(unittest.TestCase):
     def setUp(self):
-        self.result = None  # Đối tượng CustomTestResult
         chrome_profile_path = "C:\\Users\\hoang\\AppData\\Local\\Google\\Chrome\\User Data\\Default"
         options = webdriver.ChromeOptions()
-        # options.add_argument(f"--user-data-dir={chrome_profile_path}")
+        options.add_argument(f"--user-data-dir={chrome_profile_path}")
 
         options = webdriver.ChromeOptions()
         options.add_experimental_option("useAutomationExtension", False)
         options.add_experimental_option("excludeSwitches",["enable-automation"])
-
         self.driver = webdriver.Chrome(options=options)
     
     def test_login(self):
-        self.driver.get('http://localhost:9000/login')
+        self.driver.get("https://ilove.fmplustest.xyz/login")
+
         username = self.driver.find_element(By.ID, value='mui-1')
         password = self.driver.find_element(By.ID, value='mui-3')
         submit_button = self.driver.find_element(By.XPATH, '//*[@id="app_shell"]/div/div/div/div[2]/form/div[3]/button')
@@ -35,10 +34,6 @@ class LoginTest(unittest.TestCase):
         input_element = self.driver.find_element(By.XPATH, '//*[@id="app"]/div/div/div[1]/div[2]/div[1]/input')
         self.assertTrue(input_element.is_displayed())
         
-        # Tăng giá trị success_count ở CustomTestResult
-        if self.result:
-            self.result.success_count += 1
-
     def tearDown(self):
         self.driver.quit()
 

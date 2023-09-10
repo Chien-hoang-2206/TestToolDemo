@@ -10,7 +10,7 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
-from page import check_for_error_script
+from Ultils.page import check_for_error_script
 import HtmlTestRunner
 class AssetList(unittest.TestCase):
     def setUp(self):
