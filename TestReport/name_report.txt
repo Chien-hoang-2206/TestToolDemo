@@ -1,0 +1,3 @@
+Testcase list step Report
+  - Step 1: Thực hiện bước 1
+  - Step 2: Thực hiện bước 2

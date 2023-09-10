@@ -1,0 +1,44 @@
+import unittest
+import time
+import pdb
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.select import Select
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
+from selenium.common.exceptions import NoSuchElementException
+
+#openfile 
+with open(self.report_file, 'w', encoding='utf-8') as f:
+    f.write("Test asset list Report\n")
+
+
+# overwrite file 
+with open(self.report_file, 'a', encoding='utf-8') as f: 
+    for step in self.current_test_steps:
+        f.write(f"  - {step}\n")
+
+
+
+actions = ActionChains(self.driver)
+# wait time s  find element 
+    WebDriverWait(self.driver, 2).until(
+        EC.presence_of_element_located((By.XPATH, '//*[@id="CustomList"]'))
+        )
+
+    div_element = self.driver.find_element(By.XPATH, '')
+
+    for _ in range(3):
+        actions.send_keys(Keys.ARROW_DOWN)  # Di chuyển xuống 10 lần
+    actions.send_keys(Keys.RETURN)
+    actions.perform()
+
+#click out side 
+    time.sleep(0.4)
+    click_out_side = self.driver.find_element(By.XPATH, '//*[@id="Number"]')
+    actions.click(click_out_side).perform()
+    time.sleep(0.5)
+
