@@ -28,7 +28,7 @@ if __name__ == '__main__':
     AssetList = TestLoader().loadTestsFromTestCase(AssetList)
     AssetCreate = TestLoader().loadTestsFromTestCase(AssetCreate)
 
-    suite = TestSuite([AssetCreate])
+    suite = TestSuite([LoginTest,AssetList,AssetCreate])
 
     runner = HTMLTestRunner(output=report_directory)
 

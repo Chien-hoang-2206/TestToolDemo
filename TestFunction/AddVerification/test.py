@@ -31,9 +31,9 @@ class AssetCreatePage:
         submit_button = self.driver.find_element(By.XPATH, '//*[@id="mui-5"]')
         submit_button.click()
 
-class AssetCreate(unittest.TestCase):
+class VerificationCreate(unittest.TestCase):
     def setUp(self):
-        self.test_data = self.read_test_data('C:/Code/FIndXTest/TestAsset/TestFunction/AddAsset/test_data.json')
+        self.test_data = self.read_test_data('C:/Code/FIndXTest/TestAsset/TestFunction/AddVerification/test_data.json')
         chrome_profile_path = "C:\\Users\\hoang\\AppData\\Local\\Google\\Chrome\\User Data\\Default"
         options = webdriver.ChromeOptions()
         options.add_argument(f"--user-data-dir={chrome_profile_path}")
@@ -48,7 +48,7 @@ class AssetCreate(unittest.TestCase):
         return data
 
     def create_asset(self, asset_data):
-        self.driver.get("https://ilove.fmplustest.xyz/asset/create")
+        self.driver.get("http://localhost:9000/asset/verification/create")
 
         characters = string.ascii_letters + string.digits
         random_code = ''.join(random.choice(characters) for _ in range(5))

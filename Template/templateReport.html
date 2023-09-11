@@ -62,118 +62,121 @@
                                 endif %}
                             </td>
                         </tr>
+
+                        <tr>
+                            <td>
+                                <p>TestData </p>
+                                <tr>
+                                    <td style="margin-left: 30; padding-left: 80px;  padding-left: 80px; ">
+                                        Name: {{ data[loop.index|string]['name'] }}
+                                    </td>
+                                    <td>
+                                        DateBuy: {{ data[loop.index|string]['DateBuy'] }}
+                                    </td>
+                                </tr>
+                                <tr>
+        
+                                    <td style="margin-left: 30; padding-left: 80px; padding-left: 80px;">
+                                        Code: {{ data[loop.index|string]['code'] }}
+                                    </td>
+                                    <td>
+                                        UserId: {{ data[loop.index|string]['UserId'] }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="margin-left: 30; padding-left: 80px; padding-left: 80px;">
+                                        TypeId: {{ data[loop.index|string]['TypeId'] }}
+                                    </td>
+                                    <td>
+                                        ManufacturerCode: {{ data[loop.index|string]['ManufacturerCode'] }}
+                                    </td>
+                                </tr>
+                                <tr>
+        
+                                    <td style="margin-left: 30; padding-left: 80px; padding-left: 80px;">
+                                        GroupId: {{ data[loop.index|string]['GroupId'] }}
+                                    </td>
+                                    <td>
+                                        Serial: {{ data[loop.index|string]['Serial'] }}
+                                    </td>
+                                </tr>
+                                <tr>
+        
+                                    <td style="margin-left: 30; padding-left: 80px; padding-left: 80px;">
+                                        Category: {{ data[loop.index|string]['Category'] }}
+                                    </td>
+                                    <td>
+                                        ManufactureYear: {{ data[loop.index|string]['ManufactureYear'] }}
+                                    </td>
+                                </tr>
+                                <tr>
+        
+                                    <td style="margin-left: 30; padding-left: 80px;">
+                                        StatusQuality: {{ data[loop.index|string]['StatusQuality'] }}
+                                    </td>
+                                    <td>
+                                        Conutry:
+                                    </td>
+                                </tr>
+                                <tr>
+        
+                                    <td style="margin-left: 30; padding-left: 80px;">
+                                        StatusBuy: {{ data[loop.index|string]['StatusBuy'] }}
+                                    </td>
+                                    <td>
+                                        GuaranteeTime: {{ data[loop.index|string]['GuaranteeTime'] }}
+                                    </td>
+                                </tr>
+                                <tr>
+        
+                                    <td style="margin-left: 30; padding-left: 80px;">
+                                        UnitId: {{ data[loop.index|string]['UnitId'] }}
+                                    </td>
+                                    <td>
+                                        ConditionApplyGuarantee: {{ data[loop.index|string]['ConditionApplyGuarantee'] }}
+                                    </td>
+                                </tr>
+                                <tr>
+        
+                                    <td style="margin-left: 30; padding-left: 80px;">
+                                        Quantity: {{ data[loop.index|string]['Quantity'] }}
+                                    </td>
+                                    <td>
+                                        DepreciationDate: {{ data[loop.index|string]['DepreciationDate'] }}
+                                    </td>
+                                </tr>
+                                <tr>
+        
+                                    <td style="margin-left: 30; padding-left: 80px;">
+                                        PurchasePrice: {{ data[loop.index|string]['PurchasePrice'] }}
+                                    </td>
+                                    <td>
+                                        OriginalPrice: {{ data[loop.index|string]['OriginalPrice'] }}
+                                    </td>
+                                </tr>
+                                <tr>
+        
+                                    <td style="margin-left: 30; padding-left: 80px;">
+                                        VendorId: {{ data[loop.index|string]['VendorId'] }}
+                                    </td>
+                                    <td>
+                                        DepreciatedValue: {{ data[loop.index|string]['DepreciatedValue'] }}
+                                    </td>
+                                </tr>
+                                <tr>
+        
+                                    <td style="margin-left: 30; padding-left: 80px;">
+                                        DepreciatedMonth: {{ data[loop.index|string]['DepreciatedMonth'] }}
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </td>
+                        </tr>
+                      
                         {% endif %}
                         {% endfor %}
-                        <tr>
-                            <td>
-                                TestData
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="margin-left: 30;">
-                                Name: {{ data.name }}
-                            </td>
-                            <td>
-                                DateBuy: {{ data.DateBuy }}
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="margin-left: 30;">
-                                Code: {{ data.code }}
-                            </td>
-                            <td>
-                                UserId: {{ data.UserId }}
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="margin-left: 30;">
-                                TypeId: {{ data.TypeId }}
-                            </td>
-                            <td>
-                                ManufacturerCode: {{ data.ManufacturerCode }}
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="margin-left: 30;">
-                                GroupId: {{ data.GroupId }}
-                            </td>
-                            <td>
-                                Serial: {{ data.Serial }}
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="margin-left: 30;">
-                                Category: {{ data.Category }}
-                            </td>
-                            <td>
-                                ManufactureYear: {{ data.ManufactureYear }}
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="margin-left: 30;">
-                                StatusQuality: {{ data.StatusQuality }}
-                            </td>
-                            <td>
-                                Conutry:
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="margin-left: 30;">
-                                StatusBuy: {{ data.StatusBuy }}
-                            </td>
-                            <td>
-                                GuaranteeTime: {{ data.GuaranteeTime }}
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="margin-left: 30;">
-                                UnitId: {{ data.UnitId }}
-                            </td>
-                            <td>
-                                ConditionApplyGuarantee: {{ data.ConditionApplyGuarantee }}
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="margin-left: 30;">
-                                Quantity: {{ data.Quantity }}
-                            </td>
-                            <td>
-                                DepreciationDate: {{ data.DepreciationDate }}
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="margin-left: 30;">
-                                PurchasePrice: {{ data.PurchasePrice }}
-                            </td>
-                            <td>
-                                OriginalPrice: {{ data.OriginalPrice }}
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="margin-left: 30;">
-                                VendorId: {{ data.VendorId }}
-                            </td>
-                            <td>
-                                DepreciatedValue: {{ data.DepreciatedValue }}
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="margin-left: 30;">
-                                DepreciatedMonth: {{ data.DepreciatedMonth }}
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
+                     
 
 
                         <tr style="    
